@@ -1,0 +1,18 @@
+[project]
+name = "cnn-audio"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.117.1",
+    "librosa>=0.11.0",
+    "modal>=1.1.4",
+    "pandas>=2.3.2",
+    "pydantic>=2.11.9",
+    "pytest>=8.4.2",
+    "soundfile>=0.13.1",
+    "torch>=2.8.0",
+    "torchaudio>=2.8.0",
+    "torchvision>=0.23.0",
+]
