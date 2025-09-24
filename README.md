@@ -12,34 +12,30 @@ Sistema de clasificación de audio que identifica sonidos ambientales usando un 
 - Usa red neuronal ResNet para clasificación
 - Retorna predicciones principales con puntajes de confianza
 
-## Instalación
+## Uso
 
-Instalar dependencias con uv:
+1. Instalar dependencias con uv:
 
 ```bash
 uv sync
 ```
 
-## Entrenamiento
-
-Entrenar el modelo en Modal cloud:
+2. Entrenar el modelo en Modal cloud:
 
 ```bash
-modal run ops/train.py
+make train
 ```
 
-## Inferencia
-
-Desplegar servidor de inferencia:
+3. Desplegar servidor de inferencia:
 
 ```bash
-modal run ops/inference.py
+make deploy
 ```
 
-Probar el endpoint:
+4. Probar el endpoint:
 
 ```bash
-INFERENCE_ENDPOINT_URL=<tu-endpoint-url> pytest tests/test_inference_endpoint.py -v
+make test
 ```
 
 ## Estructura
